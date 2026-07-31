@@ -1,1 +1,370 @@
-"# for-my-girlfriend" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 1st August ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#fff5f7;
+overflow-x:hidden;
+color:#5a2a3d;
+}
+
+.hero{
+padding:70px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-family:"Great Vibes",cursive;
+font-size:70px;
+color:#8b1e3f;
+}
+
+.hero h2{
+margin-top:15px;
+font-weight:500;
+}
+
+.timer{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+color:#d6336c;
+}
+
+.section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section h2{
+font-family:"Great Vibes";
+font-size:50px;
+margin-bottom:25px;
+color:#8b1e3f;
+}
+
+.note{
+max-width:650px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+line-height:1.9;
+font-size:18px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.photo{
+background:white;
+padding:10px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.photo:hover{
+transform:scale(1.05);
+}
+
+.photo img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.photo p{
+margin-top:10px;
+font-weight:600;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.card h3{
+color:#d6336c;
+margin-bottom:10px;
+}
+
+.final{
+padding:80px 20px;
+text-align:center;
+}
+
+.final h1{
+font-family:"Great Vibes";
+font-size:60px;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 40px;
+font-size:20px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+margin:10px;
+}
+
+.yes{
+background:#ff4d88;
+color:white;
+}
+
+.no{
+background:#ddd;
+}
+
+#message{
+margin-top:30px;
+font-size:30px;
+color:#d6336c;
+font-weight:bold;
+}
+
+.heart{
+position:fixed;
+top:-10px;
+color:pink;
+animation:fall linear infinite;
+user-select:none;
+}
+
+@keyframes fall{
+
+to{
+transform:translateY(110vh);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Happy 1st August ❤️</h1>
+
+<h2>To My Forever</h2>
+
+<p>Every second with you is my favorite memory.</p>
+
+<div class="timer" id="timer"></div>
+
+</div>
+
+<div class="section">
+
+<h2>My Love Letter 💌</h2>
+
+<div class="note">
+
+My Dearest ❤️,
+
+<br><br>
+
+Happy 1st August, my love.
+
+Every day with you feels like a beautiful dream I never want to wake up from.
+
+Thank you for loving me, supporting me, making me laugh, and being my safe place.
+
+You make ordinary days magical, and every moment with you becomes a memory I treasure forever.
+
+I promise to keep loving you, respecting you, and standing beside you no matter what life brings.
+
+I love you more than words can ever describe.
+
+<br><br>
+
+Forever Yours ❤️
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Our Memories 📸</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="photo1.jpg">
+<p>Our Picture</p>
+</div>
+
+<div class="photo">
+<img src="photo3.jpg">
+<p>Our Memory</p>
+</div>
+
+<div class="photo">
+<img src="photo4.jpg">
+<p>Our Favorite Moment</p>
+</div>
+
+<div class="photo">
+<img src="photo2.jpg">
+<p>Together Forever</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Why I Love You ❤️</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Your Smile 😊</h3>
+<p>It brightens every dark day.</p>
+</div>
+
+<div class="card">
+<h3>Your Heart 💖</h3>
+<p>You care for everyone with so much love.</p>
+</div>
+
+<div class="card">
+<h3>Your Support 🌸</h3>
+<p>You always believe in me.</p>
+</div>
+
+<div class="card">
+<h3>Our Future 🏡</h3>
+<p>I can't wait to build a lifetime with you.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="final">
+
+<h1>Will You Stay With Me Forever? ❤️</h1>
+
+<button class="yes" onclick="love()">YES ❤️</button>
+
+<button class="no" id="no">No</button>
+
+<div id="message"></div>
+
+</div>
+
+<script>
+
+const start=new Date("2026-05-15");
+
+function update(){
+
+const now=new Date();
+
+let diff=now-start;
+
+let days=Math.floor(diff/(1000*60*60*24));
+
+let hours=now.getHours();
+
+let mins=now.getMinutes();
+
+let secs=now.getSeconds();
+
+document.getElementById("timer").innerHTML=
+"We've been together for<br><br>"+days+
+" Days "+
+hours+" Hours "+
+mins+" Minutes "+
+secs+" Seconds ❤️";
+
+}
+
+setInterval(update,1000);
+
+update();
+
+function love(){
+
+document.getElementById("message").innerHTML=
+"I Love You Forever ❤️🥰";
+
+}
+
+const no=document.getElementById("no");
+
+no.addEventListener("mouseover",()=>{
+
+no.style.position="absolute";
+
+no.style.left=Math.random()*80+"vw";
+
+no.style.top=Math.random()*80+"vh";
+
+});
+
+function hearts(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="💖";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=Math.random()*20+15+"px";
+
+heart.style.animationDuration=(Math.random()*3+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>heart.remove(),7000);
+
+}
+
+setInterval(hearts,250);
+
+</script>
+
+</body>
+</html>
